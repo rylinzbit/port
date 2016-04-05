@@ -1,0 +1,147 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ #loader-wrapper {
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	z-index: 1000;
+ }
+ 	#loader {
+ 		display: block;
+ 		position: relative;
+ 		left: 50%;
+ 		top: 50%;
+ 		width: 150px;
+ 		height: 150px;
+ 		margin: -75px 0 0 -75px;
+ 		border-radius: 50%;
+ 		border: 6px solid transparent;
+ 		border-top-color: rgba(214, 184, 36, 0.85);
+
+ 		-webkit-animation: spin linear 2s infinite;
+ 		animation: spin 2s linear infinite;
+ 		z-index: 1001;
+ 	}
+ 		#loader:before {
+ 			content: "";
+ 			position: absolute;
+ 			top: 5px;
+ 			left: 5px;
+ 			right: 5px;
+ 			bottom: 5px;
+ 			border-radius: 50%;
+ 			border: 4px solid transparent;
+ 			border-top-color: #E6F2F4;
+
+ 			-webkit-animation: spin linear 3s infinite;
+	 		animation: spin 3s linear infinite;
+ 		}
+ 		#loader:after {
+ 			content: "";
+ 			position: absolute;
+ 			top: 15px;
+ 			left: 15px;
+ 			right: 15px;
+ 			bottom: 15px;
+ 			border-radius: 50%;
+ 			border: 2px solid transparent;
+ 			border-top-color: #C7CBCC;
+
+ 			-webkit-animation: spin linear 1.5s infinite;
+	 		animation: spin 1.5s linear infinite;
+ 		}
+
+ 	@-webkit-keyframes spin {
+ 		0% 	 { 
+ 			-webkit-transform: rotate(7.5deg);
+ 			-ms-transform: rotate(7.5deg);
+ 			transform: rotate(7.5deg);
+ 		}
+ 		100% { 
+ 			-webkit-transform: rotate(360deg);
+ 			-ms-transform: rotate(360deg);
+ 			transform: rotate(360deg);
+ 		}
+ 	}
+ 	@keyframes spin {
+ 		0%	 { 
+ 			-webkit-transform: rotate(7.5deg);
+ 			-ms-transform: rotate(7.5deg);
+ 			transform: rotate(7.5deg);
+ 		}
+ 		100% { 
+ 			-webkit-transform: rotate(360deg);
+ 			-ms-transform: rotate(360deg);
+ 			transform: rotate(360deg);
+ 		}
+ 	}
+
+ 	#loader-wrapper .loader_section {
+ 		position: fixed;
+ 		right: 0;
+ 		width: 100%;
+ 		height: 51%;
+ 		background-color: #073842;
+ 		z-index: 1000;
+ 	}
+
+ 	#loader-wrapper .section_top {
+ 		top: 0;
+ 	}
+
+ 	#loader-wrapper .section_bottom {
+ 		bottom: 0;
+ 	}
+
+ 	.loaded .section_top {
+ 		-webkit-transform: translateY(-100%);
+ 			-ms-transform: translateY(-100%);
+ 				transform: translateY(-100%);
+
+ 		-webkit-transition: all 0.5s 0.5s ease-out;
+ 				transition: all 0.5s 0.5s ease-out;
+ 	}
+
+ 	.loaded .section_bottom {
+ 		-webkit-transform: translateY(200%);
+ 			-ms-transform: translateY(200%);
+ 				transform: translateY(200%);
+
+ 		-webkit-transition: all 0.5s 0.5s ease-out;
+ 				transition: all 0.5s 0.5s ease-out;
+ 	}
+
+ 	.loaded #loader {
+ 		opacity: 0;
+
+ 		-webkit-transition: all 0.5s ease-out;
+ 				transition: all 0.5s ease-out;
+ 	}
+
+ 	.loaded #loader-wrapper {
+ 		visibility: hidden;
+
+ 		-webkit-transform: translateX(-100%);
+ 			-ms-transform: translateX(-100%);
+ 				transform: translateX(-100%);
+
+ 		-webkit-transition: all 0.5s 1s ease-out;
+ 				transition: all 0.5s 1s ease-out;
+ 	}
+

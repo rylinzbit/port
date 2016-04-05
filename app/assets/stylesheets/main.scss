@@ -1,0 +1,174 @@
+// Place all the styles related to the Main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+    width: 100vw;
+	height: 100vh;
+    margin: 0;
+    padding: 0px;
+	background-color: #F2F0ED;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+	#welcome_img {
+		width: 30%;
+		margin: 25% 65%;
+		position: fixed;
+		z-index: 5;
+	}
+
+
+	#left_side, #right_side_gray {
+		width: 50%;
+		height: 100%;
+		display: inline-block;
+		background-color: #AAA8A4;
+		position: fixed;
+		z-index: 3;
+	}
+
+	#right_side_gray {
+		right: 0;
+	}
+
+	#left_side {
+		padding-top: 5%;
+		padding-bottom: 8%;
+
+		#merkaba {
+			width: 80%;
+			height: 80%;
+			margin:0 50%;
+			position: relative;
+		}
+
+		#links {
+			width: 100%;
+			height: 100%;
+			margin-top: -35%;
+		
+			.link_img {
+				width: 45%;
+				margin-left: 55%;
+				margin-bottom: 7px;
+				padding: 4px; 
+				border: 3px solid rgba(214, 184, 36, 0.20);
+				background-color: rgba(225, 225, 225, 0.7);
+				box-shadow: 1px 1px 6px gray;
+				position: relative;
+			}
+
+			#contact {
+				margin-bottom: 5%;
+			}
+		}
+	}
+
+
+	#right_greeting {
+		width: 75%;
+		top: 0;
+		right: 0;
+		padding: 5%;
+		position: fixed;
+		z-index: 0;
+
+		#greeting {
+			width: 80%;
+			height: auto;
+			margin: 5% 0 0 10%;
+			padding: 10px;
+			border: 2px solid rgba(214, 184, 36, 0.20);
+			background-color: white;
+			box-shadow: 1px 1px 4px gray;
+			position: relative;
+		}
+
+		#photo_me {
+			width: 50%;
+			margin: 4% 30%;
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	#right_info_pages {
+		width: 75%;
+		height: 85%;
+		top: 0;
+		right: 0;
+		padding: 20px;
+		position: fixed;
+
+		.info_divs {
+			width: 75%;
+			height: 98%;
+			margin: 4% 0 4% 18%;
+			padding: 20px;
+			overflow: scroll;
+			font-weight: 300;
+			font-size: 16px;
+			border: 1px solid rgba(214, 184, 36, 0.30);
+			background-color: white;
+			box-shadow: 1px 1px 5px lightgrey;
+			transform: rotateY(90deg);
+			position: absolute;
+			z-index: 2;
+
+			p {
+				margin: .5% 3%;
+			}
+		}
+		#about_div {
+			padding-top: 30px;
+
+			.icons {
+				width: 23%;
+				margin-left: 1.4%;
+				display: inline-block;
+				vertical-align: top;
+				box-shadow: 1px 1px 4px lightgrey;
+				position: relative;
+			}
+		}
+
+		#projects_div {
+			.project_info {
+				font-size: 14px;
+			}
+		}
+
+		#contact_div {
+			padding: 20% 10%;
+
+			span {
+				font-weight: bold;
+				font-size: 18px;
+			}
+
+			.web_logos {
+				width: 10%;
+				opacity: 0.70;
+				display: inline-block;
+			}
+			#linked_in_logo {
+				margin-left: 40%;
+			}
+		}
+
+		.text {
+			font-family: 'Josefin Sans', sans-serif;
+		}
+		h3 {
+			font-weight: lighter;
+			font-size: 33px;
+		}
+	}
+
+
+

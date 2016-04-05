@@ -1,0 +1,38 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 547.6 544.6" style="enable-background:new 0 0 547.6 544.6;" xml:space="preserve" id="merkaba_svg">
+<defs>
+	<style type="text/css">
+		.st0{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+
+		#Layer_1, #Layer_2 {
+			stroke-dasharray: 1500;
+			stroke-dashoffset: 0;
+			-webkit-animation: dash 4s linear forwards;
+		}
+
+		#merkaba_svg .st0{
+			fill: rgba(39, 143, 164, 0.3);
+		}
+
+		@-webkit-keyframes dash {
+			from {
+				stroke-dashoffset: 1500;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+
+	</style>
+</defs>
+<g id="Layer_1">
+	<polygon class="st0" points="100.8,130.3 257,538.3 543.2,196.2 	"/>
+	<polyline class="st0" points="100.8,130.3 240.3,274 257,538.3 	"/>
+	<line class="st0" x1="543.2" y1="196.2" x2="240.3" y2="274"/>
+</g>
+<g id="Layer_2">
+	<polygon class="st0" points="500.3,469 7.8,381 316,5.8 	"/>
+	<polyline class="st0" points="7.8,381 316,295.1 316,5.8 	"/>
+	<line class="st0" x1="500.3" y1="469" x2="316" y2="295.1"/>
+</g>
+</svg>
